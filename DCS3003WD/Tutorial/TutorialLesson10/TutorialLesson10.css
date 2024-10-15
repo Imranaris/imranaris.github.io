@@ -1,0 +1,77 @@
+body {
+display: flex;
+justify-content: center;
+align-items: stretch; /* Stretch to fill the height */
+height: 100vh; /* Full viewport height */
+margin: 0;
+font-family: Arial, sans-serif;
+background-image: url('background.webp'); /* Replace 'your-image.jpg' with the path to your image */
+background-size: cover; /* Ensures the image covers the entire page */
+background-position: center; /* Centers the image */
+background-repeat: no-repeat; /* Prevents the image from repeating */
+color: white; /* Ensures text is visible */
+}
+
+.container {
+display: flex;
+width: 100%;
+height: 100vh; /* Full height of the body */
+overflow-y: auto;
+}
+
+.left-box {
+width: 30%; /* 30% of the container */
+padding: 20px;
+box-sizing: border-box;
+display: flex; /* Enable flexbox */
+flex-direction: column; /* Stack children vertically */
+justify-content: center; /* Center vertically */
+align-items: center; /* Center horizontally */
+height: 100vh; /* Left box takes full viewport height */
+position: sticky; /* Keeps left box in place while scrolling */
+top: 0; /* Ensures sticky effect starts from the top */
+color: white; /* Ensures text is visible */
+}
+
+.right-box {
+width: 70%; /* 70% of the container */
+display: grid; /* Use grid layout */
+grid-template-columns: repeat(3, 1fr); /* 3 columns */
+gap: 10px; /* Space between grid items */
+padding: 10px;
+box-sizing: border-box;
+overflow-y: auto; /* Enable scrolling within the right box */
+height: 100%; /* Full height of the container */
+color: white; /* Ensures text is visible */
+}
+
+.small-box {
+    text-align: center;
+}
+
+.small-box img {
+max-width: 100%;
+height: auto; /* Maintain aspect ratio */
+border-radius: 10px; /* Rounded corners */
+transition: box-shadow 0.3s; /* Smooth transition for the glow effect */
+}
+
+/* Glow effect around images */
+.small-box img:hover {
+box-shadow: 0 0 15px rgba(255, 255, 0, 0.8), /* Yellow glow */
+0 0 30px rgba(255, 255, 0, 0.6);
+}
+
+h1 {
+margin: 0;
+font-size: 24px;
+text-align: center;
+color: white; /* Ensures the heading is visible */
+}
+
+h2 {
+margin: 5px 0 0; /* Add margin above h2 */
+font-size: 18px;
+text-align: center;
+color: white; /* Ensures the subheading is visible */
+}
