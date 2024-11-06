@@ -1,54 +1,80 @@
 .container {
-    display: flex;
-    width: 100%;
-    height: 100vh; /* Full height of the body */
-    overflow-y: auto;
-}
+display: flex;
+width: 100%;
+height: 100vh; /* Full height of the body */
+overflow-y: auto;}
 
 .left-box {
-    width: 30%; /* 30% of the container */
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex; /* Enable flexbox */
-    flex-direction: column; /* Stack children vertically */
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    height: 100vh; /* Left box takes full viewport height */
-    position: sticky; /* Keeps left box in place while scrolling */
-    top: 0; /* Ensures sticky effect starts from the top */
-    background-color: #ee9f13; /* Add background for visibility */
-    color: white; /* Ensures text is visible */
-}
+width: 30%; /* 30% of the container */
+padding: 20px;
+box-sizing: border-box;
+display: flex; /* Enable flexbox */
+flex-direction: column; /* Stack children vertically */
+justify-content: center; /* Center vertically */
+align-items: center; /* Center horizontally */
+height: 100vh; /* Left box takes full viewport height */
+position: sticky; /* Keeps left box in place while scrolling */
+top: 0; /* Ensures sticky effect starts from the top */
+background-color: #ee9f13; /* Add background for visibility */
+color: white;} /* Ensures text is visible */
 
 .right-box {
-    width: 70%; /* 70% of the container */
-    display: flex; /* Use flex layout */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    padding: 20px;
-    box-sizing: border-box;
-    overflow-y: auto; /* Enable scrolling within the right box */
-    height: 100%; /* Full height of the container */
-    background-color: #13ee91; /* Add background for visibility */
-    color: white; /* Ensures text is visible */
-}
+ width: 70%; /* 70% of the container */
+display: flex; /* Use flex layout */
+justify-content: center; /* Center horizontally */
+align-items: center; /* Center vertically */
+padding: 20px;
+box-sizing: border-box;
+overflow-y: auto; /* Enable scrolling within the right box */
+height: 100%; /* Full height of the container */
+background-color: #13ee91; /* Add background for visibility */
+color: white;} /* Ensures text is visible */
 
-/* text-shadow: Creates a shadow effect on the text */
+/* 1. writing-mode: Rotates the text orientation for unique styles */
+
 h1 {
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    padding: 10px;
+writing-mode: vertical-rl; 
+padding: 10px;}
+
+/* 2. Adjust text shadow to create a glow or light effect */
+
+h1 {
+text-shadow: 0 0 10px rgba(255, 0, 0, 1), 
+0 0 20px rgba(255, 0, 0, 0.8),
+0 0 30px rgba(255, 69, 0, 0.7); /* Layered shadow for a red glowing effect */
+color: #FF0000; /* Bright red for visibility */
+writing-mode: vertical-rl;
+text-orientation: mixed;
+padding: 10px;}
+
+/* 3. Adjust the shadow to create a glow or light effect */
+
+p {
+box-shadow: 0 0 10px 5px rgba(255, 255, 0, 0.8); /* Soft yellow glow */
+padding: 20px;
+background-color: #fff; /* Lighter background to make shadow more visible */
+border: 1px solid #ccc;
+color: black;
+margin: 10px;
+max-width: 80%; /* Adjusts the paragraph width */
+text-align: center; } /* Center the text inside the box */
+
+/* 4. Adjust border radius to be rounded */
+p {
+    border-radius: 15px; /* Creates rounded corners */
 }
 
-/* box-shadow: More visible with a light background */
-p {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    background-color: #fff; /* Lighter background to make shadow more visible */
-    border: 1px solid #ccc;
-    color: black;
-    margin: 10px;
-    max-width: 80%; /* Adjusts the paragraph width */
-    text-align: center; /* Center the text inside the box */
+/* 5.add a bouncy effect to your <p> */
+
+@keyframes bounce {
+0%, 20%, 50%, 80%, 100% {
+transform: translateY(0);}
+40% {
+transform: translateY(-30px);}
+60% {
+transform: translateY(-15px);}
 }
+
+p {
+animation: bounce 2s ease infinite;}
+
