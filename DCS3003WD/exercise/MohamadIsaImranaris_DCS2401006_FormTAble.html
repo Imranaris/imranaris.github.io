@@ -1,0 +1,79 @@
+<html><head>
+<title>Form - Text Input</title>
+<link rel=icon href="sunflower.jpg" type="image/jpg">
+<meta name=viewport content="width=device-width, initial-scale=1.0"></head>
+<body topmargin=50>
+
+<center>
+<form>
+<p style="background-color: powderblue;
+color: #696969; font-family: verdana;
+font-size: 160%;
+text-align:center;
+width:40%; height:85%;">
+
+<br><br>
+
+<table width=100% height=85%>
+
+<caption style="font-size: 20px;">Personal details:
+</caption>
+
+<tr align=left>
+<td>First Name: </td>
+<td><input type="text" name="fname" size="40" maxlength="5"></td>
+</tr>
+
+<tr align=left>
+<td>Last Name: </td>
+<td><input type="text" name="lname" size="40" maxlength="5"> </td>
+</tr>
+
+<tr align=left>
+<td>Gender:</td>
+<td><input type="radio" name="gender" value="Male">Male
+<input type="radio" name="gender" value="Female">Female</td>
+</tr>
+
+<tr align=left>
+<td>Choose your favorite subjects: </td>
+<td><input type="checkbox" name="fav_sub" value="DCS4103">DCS4103
+<input type="checkbox" name="fav_sub" value="DCS3003">DCS3003
+<input type="checkbox" name="fav_sub" value="MST1003">MST1003 
+<input type="checkbox" name="fav_sub" value="MST2003">MST2003</td>
+</tr>
+
+<tr align=left>
+<td>Address: </td>
+<td><textarea rows="4" cols="30" name="address"></textarea></td>
+</tr>
+
+<tr align=left>
+<td>Date of birth:</td>
+<td><input type="date" name="dob"></td>
+</tr>
+
+<tr align=left>
+<td>Login password:</td>
+<td><input type="password" name="loginpass"></td>
+</tr>
+
+<tr align=left>
+<td>Course: </td>
+<td><select>
+<option value="0">- List of Courses -</option>
+<option value="DCS">Diploma In Computer Science</option>
+<option value="DIB">Diploma In Business</option>
+<option value="DAS">Diploma In Airline</option>
+</select></td>
+</tr>
+
+<tr align=center>
+<th colspan="2"><input type="submit" value="Submit">
+<input type="reset" value="Reset"></th>
+</tr>
+
+</table>
+</form>
+</center>
+</body></html>
