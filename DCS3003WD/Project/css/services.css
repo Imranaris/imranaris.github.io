@@ -1,0 +1,92 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    background-color: rgb(12, 3, 51);
+    color: white;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    padding: 10px 8%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(12, 3, 51);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+    color: blueviolet;
+    border-radius: 5px;
+}
+
+/* Services Section */
+.services {
+    text-align: center;
+    padding: 40px;
+}
+
+.services h1 {
+    font-size: 48px;
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+.services p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Service Box */
+.service-box {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 45%;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.service-box h2 {
+    font-size: 24px;
+    margin: 20px 0;
+    color: blueviolet;
+}
+
+.service-box p {
+    font-size: 16px;
+    color: black;
+}

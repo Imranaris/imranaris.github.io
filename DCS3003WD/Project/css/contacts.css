@@ -1,0 +1,169 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: rgb(12, 3, 51); /* Dark blue background */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Page Heading */
+h1 {
+    color: white;
+    padding-top: 80px;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px; /* Centered form with a max width */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Inputs */
+input, textarea {
+    background-color: white;
+    width: 100%; /* Full width within the form container */
+    font-size: 18px;
+    padding: 12px; /* Padding inside the text box */
+    border-radius: 5px;
+    border: 2px solid black;
+    margin-bottom: 20px; /* Space between fields */
+    display: block;
+    color: black; /* Text color inside input fields */
+    overflow: hidden; /* Prevent text from overflowing */
+    white-space: nowrap; /* Prevent extra long single words from spilling out */
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: aqua;
+    border-width: 3px;
+}
+
+/* Textarea Specifics */
+textarea {
+    font-family: 'Courier New', Courier, monospace;
+    resize: none; /* Prevent resizing */
+    height: 100px; /* Fixed height for consistency */
+    overflow: auto; /* Enable scrolling if text exceeds the box size */
+    word-wrap: break-word; /* Wrap long words to the next line */
+}
+
+/* Submit Button */
+button {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid aqua;
+    font-size: 20px;
+    padding: 12px 30px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+/* Navigation Styles */
+nav {
+    width: 100%;
+    padding: 10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+    color: blueviolet;
+}
+
+/* Error Messages */
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: -15px; /* Bring error message closer to input field */
+    margin-bottom: 10px;
+    display: none;
+}
+
+/* Input Field Validation Styles */
+input:invalid,
+textarea:invalid {
+    border: 2px solid red;
+}
+
+input:valid,
+textarea:valid {
+    border: 2px solid green;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 40px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 35px;
+    }
+
+    button {
+        font-size: 16px;
+        padding: 8px 20px;
+    }
+
+    input, textarea {
+        font-size: 16px;
+    }
+}

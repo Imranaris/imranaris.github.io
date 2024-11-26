@@ -1,0 +1,184 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3), rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping for smaller screens */
+    justify-content: center;
+    gap: 20px; /* Adds spacing between items */
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px; /* Reduced margin for smaller screens */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Adjusting the .content section */
+.content {
+    text-align: center;
+    padding: 20px; /* Add padding for better spacing */
+}
+
+.content h1 {
+    font-size: 5rem;
+    color: aqua;
+    font-weight: 600;
+}
+
+.content h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+/* Button container to align buttons side by side */
+.button-container {
+    display: flex; /* Aligns buttons side by side */
+    gap: 20px; /* Adds space between buttons */
+    justify-content: center; /* Centers the buttons */
+    margin-top: 50px; /* Adds space above the buttons */
+}
+
+/* Button styles */
+button {
+    background-color: aqua;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid blueviolet;
+    font-size: 22px;
+    padding: 10px 30px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+.back-video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the container */
+}
+
+/* Aspect Ratio Handling */
+@media (min-aspect-ratio: 21/9) {
+    .hero {
+        padding: 0 10%;
+    }
+
+    .back-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    nav ul {
+        justify-content: center;
+        gap: 50px;
+    }
+
+    .content {
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .content h1 {
+        font-size: 7rem;
+        word-wrap: break-word;
+    }
+
+    .content a {
+        font-size: 2rem;
+        padding: 12px 60px;
+    }
+}
+
+/* Responsive Media Queries */
+
+/* Medium Screens (Tablets) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Add spacing between stacked items */
+    }
+
+    content h1 {
+        font-size: 4rem; /* Reduce heading size */
+    }
+
+    content a {
+        font-size: 1rem;
+        padding: 8px 30px;
+    }
+}
+
+/* Small Screens (Mobile) */
+@media (max-width: 480px) {
+    .hero {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    nav {
+        padding: 10px; /* Reduce padding in navigation */
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    .content h1 {
+        font-size: 3rem; /* Further reduce heading size */
+    }
+
+    .content a {
+        font-size: 0.9rem;
+        padding: 6px 20px;
+    }
+}

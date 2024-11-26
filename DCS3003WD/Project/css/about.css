@@ -1,0 +1,123 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgb(12, 3, 51);
+    overflow: hidden;
+    height: 100vh; /* Full-screen height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    color: #fff;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* Content Container */
+.container { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%; /* Ensure container matches full-screen height */
+    margin: 0 auto;
+    gap: 20px; /* Add space between the content and image */
+}
+
+/* Hero Content */
+.hero-content {
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+}
+
+.hero-content h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: aqua;
+}
+
+.hero-content p {
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: blueviolet;
+}
+
+.hero-content button {
+    background-color: blueviolet;
+    color: white;
+    border-radius: 20px;
+    border: 2px solid aqua;
+    font-size: 20px;
+    padding: 12px 30px;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-content button:hover {
+    background-color: white;
+    color: blueviolet;
+}
+
+/* Hero Image */
+.hero-image img {
+    flex: 1;
+    width: 600px;
+    margin: auto;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Navigation */
+nav {
+    width: 100%;
+    padding: 10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: rgb(12, 3, 51); /* Same color as .hero */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+    color: blueviolet;
+}

@@ -1,0 +1,162 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(12,3,51); /* Dark blue background */
+}
+
+nav {
+    width: 100%;
+    padding: 10px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: aqua;
+    color: blueviolet;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(12,3,51); /* Same color as the body */
+    color: white;
+    margin-top: 70px; /* Ensure space below the navigation */
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 48px;
+}
+
+.header p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 16px;
+    color: #00796b; /* Teal color for text */
+    background-color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: 20px;
+    border: 2px solid #00796b; /* Teal border */
+}
+
+.btn:hover {
+    background-color: #00796b; /* Teal background on hover */
+    color: white; /* White text on hover */
+}
+
+/* Destination Container */
+.destinations-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    gap: 20px;
+}
+
+/* Individual Destination Card */
+.destination {
+    background-color: white;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    border: 1px solid #00796b; /* Teal border */
+}
+
+.destination:hover {
+    transform: scale(1.05); /* Hover effect */
+}
+
+.destination img {
+    width: 100%;
+    height: auto;
+}
+
+.destination-content {
+    padding: 20px;
+}
+
+.destination-content h2 {
+    font-size: 24px;
+    color: #00796b; /* Teal color for headings */
+    margin: 0 0 10px;
+}
+
+.destination-content p {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+/* Responsiveness: Adjust for smaller screens */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 36px; /* Smaller heading for tablets */
+    }
+
+    .destinations-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .destination {
+        width: 80%; /* Destination cards take up more width on smaller screens */
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 28px; /* Further reduce font size for mobile */
+    }
+
+    .destination {
+        width: 90%; /* Even larger destination cards for mobile */
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 10px 20px; /* Adjust button size for smaller screens */
+    }
+}
