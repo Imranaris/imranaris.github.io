@@ -1,0 +1,37 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="Images/logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>   
+
+<body>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="About-us.html">About Us</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contact Form -->
+    <main>
+        <h1>Contact Us</h1>
+        <form id="contact-form" class="contact-form">
+            <input type="text" id="first-name" name="first" placeholder="First Name" autocomplete="off" required>
+            <input type="text" id="last-name" name="last" placeholder="Last Name" autocomplete="off" required>
+            <input type="email" id="email" name="email" placeholder="Email Address" autocomplete="off" required>
+            <textarea id="message" rows="5" name="message" placeholder="Enter Your Message" autocomplete="off" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </main>
+
+    <!-- JavaScript for Validation -->
+    <script src="js/validation.js"></script>
+</body>
+</html>
